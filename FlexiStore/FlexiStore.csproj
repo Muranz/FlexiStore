@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    
+    <!-- compile the TypeScript files using Angular CLI instead of Visual Studio -->
+    <TypeScriptCompilerBlocked>true</TypeScriptCompilerBlocked>
+    <PostBuildEvent>ng build --aot</PostBuildEvent>
+    <TypeScriptToolsVersion>2.5</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\dist\out-tsc\**" />
+    <Content Remove="wwwroot\dist\out-tsc\**" />
+    <EmbeddedResource Remove="wwwroot\dist\out-tsc\**" />
+    <None Remove="wwwroot\dist\out-tsc\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="dist\" />
+  </ItemGroup>
+  
+
+</Project>

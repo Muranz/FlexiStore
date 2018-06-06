@@ -1,0 +1,141 @@
+[
+  {
+    
+    "MainCategory": 
+      {
+        
+        "Name": "Saree",
+        "Description": "Duis officia aliquip nostrud elit incididunt. Qui pariatur laborum adipisicing incididunt culpa reprehenderit aliquip cillum nulla consectetur velit dolore. Fugiat enim qui enim consectetur nisi do mollit enim est commodo ut id. Nostrud non aute mollit excepteur dolore consectetur culpa officia. Commodo veniam aute non eiusmod officia esse deserunt proident nulla anim nulla occaecat cupidatat. Aute tempor irure pariatur velit nulla commodo ullamco tempor incididunt excepteur nisi sunt nisi. In id mollit veniam eiusmod id anim esse duis.\r\n"
+      },
+    "Size": 30,
+    "Price": 2636.73,
+    "Title": "Bernice ",
+    "Description": "Nisi quis nisi magna sint sint ex enim culpa reprehenderit qui. Esse consectetur aliquip fugiat elit est sunt nisi ut nostrud amet Lorem. Incididunt eiusmod fugiat esse esse reprehenderit.\r\n",
+    "Brand": 
+      {
+        
+        "Name": "AQUACINE"
+      }
+    
+  },
+  {
+    
+    "MainCategory": 
+      {
+        
+        "Name": "Churidhar",
+        "Description": "Voluptate dolore reprehenderit aute et sint. Pariatur tempor sit amet velit reprehenderit deserunt in incididunt. Sunt ullamco nostrud minim exercitation adipisicing nostrud in pariatur veniam. Do ex ut officia laborum amet duis sint cillum ut. Dolor ipsum sit ut eu do commodo voluptate.\r\n"
+      }
+    ,
+    "Size": 29,
+    "Price": 1578.11,
+    "Title": "Roman ",
+    "Description": "In quis eiusmod do ipsum voluptate. Labore officia quis officia veniam do aute cillum. Non nostrud ex dolore magna adipisicing ipsum excepteur ex laboris non. Aliqua sunt amet esse quis consectetur adipisicing velit commodo consequat culpa labore velit. Nulla ad quis cillum voluptate ea magna tempor incididunt ad. Amet sint commodo elit quis consectetur est sint est ipsum tempor. Irure mollit ad magna voluptate dolor ad cillum velit elit pariatur magna commodo enim.\r\n",
+    "Brand": 
+      {
+        
+        "Name": "DUFLEX"
+      }
+    
+  },
+  {
+    
+    "MainCategory": 
+      {
+        
+        "Name": "Saree",
+        "Description": "Duis officia aliquip nostrud elit incididunt. Qui pariatur laborum adipisicing incididunt culpa reprehenderit aliquip cillum nulla consectetur velit dolore. Fugiat enim qui enim consectetur nisi do mollit enim est commodo ut id. Nostrud non aute mollit excepteur dolore consectetur culpa officia. Commodo veniam aute non eiusmod officia esse deserunt proident nulla anim nulla occaecat cupidatat. Aute tempor irure pariatur velit nulla commodo ullamco tempor incididunt excepteur nisi sunt nisi. In id mollit veniam eiusmod id anim esse duis.\r\n"
+      }
+    ,
+    "Size": 28,
+    "Price": 3944.72,
+    "Title": "Benson ",
+    "Description": "Nulla ea proident et tempor ut tempor do qui veniam duis Lorem. Aliquip ipsum enim ut eiusmod adipisicing esse sunt ullamco ad eu. Ullamco laboris duis cupidatat dolore aute aliquip duis.\r\n",
+    "Brand": 
+      {
+        
+        "Name": "GYNKO"
+      }
+    
+  },
+  {
+   
+    "MainCategory": 
+      {
+        
+        "Name": "Kids",
+        "Description": "Magna anim dolore tempor fugiat nostrud anim in non ullamco. Dolore aliqua officia qui amet. Aliquip officia aliqua voluptate duis commodo nulla et ut est mollit dolore deserunt quis irure.\r\n"
+      }
+    ,
+    "Size": 22,
+    "Price": 2103.44,
+    "Title": "Gill ",
+    "Description": "Officia adipisicing laboris pariatur do. Occaecat magna est eiusmod tempor irure minim. In laborum proident nostrud esse nulla veniam non anim ullamco consectetur in aliquip consequat. Officia reprehenderit consequat et dolor ea ullamco adipisicing ea ipsum do commodo. Amet sint anim elit voluptate magna sint excepteur sint est amet do amet cupidatat non.\r\n",
+    "Brand": 
+     {
+        
+        "Name": "AQUACINE"
+      }
+    
+  },
+  {
+    
+    "MainCategory": 
+     {
+        
+        "Name": "Saree",
+        "Description": "Duis officia aliquip nostrud elit incididunt. Qui pariatur laborum adipisicing incididunt culpa reprehenderit aliquip cillum nulla consectetur velit dolore. Fugiat enim qui enim consectetur nisi do mollit enim est commodo ut id. Nostrud non aute mollit excepteur dolore consectetur culpa officia. Commodo veniam aute non eiusmod officia esse deserunt proident nulla anim nulla occaecat cupidatat. Aute tempor irure pariatur velit nulla commodo ullamco tempor incididunt excepteur nisi sunt nisi. In id mollit veniam eiusmod id anim esse duis.\r\n"
+      }
+    ,
+    "Size": 36,
+    "Price": 2342.48,
+    "Title": "Ila ",
+    "Description": "Do aliqua commodo officia minim duis id officia id cillum non. Enim elit laborum eu officia nulla eiusmod ipsum enim sit. In voluptate voluptate est proident laboris eiusmod qui minim amet consectetur et laboris ullamco enim. Enim est incididunt est id dolor anim dolor amet. Commodo nostrud deserunt nisi laborum sunt eiusmod aute. Sit non qui id duis commodo. Enim et sit anim sint fugiat sit qui nulla elit ut voluptate ipsum irure labore.\r\n",
+    "Brand": 
+      {
+        
+        "Name": "GYNKO"
+      }
+    
+  },
+  {
+   
+    "MainCategory": 
+      {
+        
+        "Name": "Kids",
+        "Description": "Magna anim dolore tempor fugiat nostrud anim in non ullamco. Dolore aliqua officia qui amet. Aliquip officia aliqua voluptate duis commodo nulla et ut est mollit dolore deserunt quis irure.\r\n"
+      }
+    ,
+    "Size": 29,
+    "Price": 3258.42,
+    "Title": "Sonya ",
+    "Description": "Tempor excepteur nostrud adipisicing adipisicing quis aliquip ea. Ad aute amet aliqua anim id deserunt sit magna et consectetur minim fugiat. Aliqua laborum nisi laborum reprehenderit duis minim.\r\n",
+    "Brand": 
+      {
+        
+        "Name": "GYNKO"
+      }
+    
+  },
+  {
+ 
+    "MainCategory": 
+       {
+       
+        "Name": "Churidhar",
+        "Description": "Voluptate dolore reprehenderit aute et sint. Pariatur tempor sit amet velit reprehenderit deserunt in incididunt. Sunt ullamco nostrud minim exercitation adipisicing nostrud in pariatur veniam. Do ex ut officia laborum amet duis sint cillum ut. Dolor ipsum sit ut eu do commodo voluptate.\r\n"
+      }
+    ,
+    "Size": 32,
+    "Price": 3956.10,
+    "Title": "Karyn ",
+    "Description": "Enim non laboris esse fugiat eiusmod ex cillum labore exercitation eiusmod. Veniam sunt id est reprehenderit laborum fugiat magna veniam laboris mollit consequat est aute. Esse ad anim enim ea sunt occaecat duis nulla id.\r\n",
+    "Brand": 
+      {
+        
+        "Name": "GYNKO"
+      }
+    
+  }
+]

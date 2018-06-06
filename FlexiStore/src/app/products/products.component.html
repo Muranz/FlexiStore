@@ -1,0 +1,42 @@
+<mat-list>
+    <mat-nav-list fxLayout= "row">
+        <a mat-list-item (click)="changeCategory(category.name,filteredProducts)" *ngFor="let category of categories"> {{ category.name }} </a>
+     </mat-nav-list>
+    <mat-divider></mat-divider>
+  </mat-list>
+<mat-form-field class="search-form">
+  <input color="accent" matInput placeholder="Search Title" type="text" [(ngModel)]='listFilter' >
+</mat-form-field>
+<!-- <button button="submit" mat-raised-button color="primary">Search</button> -->
+<br>
+<div fxLayout="row" fxLayoutAlign="center start" *ngIf='errorMessage' >
+  Error: {{ errorMessage }}
+</div>
+<br>
+<mat-grid-list cols="5" rowHeight="4:6" fxLayout="row" fxLayoutGap="30px">
+    <mat-grid-tile fxflex = "20%"
+        *ngFor="let p of filteredProducts">
+        <mat-card  >
+            <a [routerLink]="['/products', p.id]" >
+              <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+              </a>
+            <mat-card-content fxLayout.gt-xs="row" fxLayout.xs="column" fxLayoutAlign="space-around" fxLayoutWrap >
+              <p>
+                <span fxFlex="100%" fxFlexAlign="center">
+                  <strong> {{ p.brand.name}} : {{ p.title }} </strong>
+                </span>
+                <br>
+                <span fxFlex="20px" fxFlexAlign="center" > Size : {{ p.size }} </span>
+                <br>
+                <span fxFlex="20px" fxFlexAlign="center" > {{ p.price | currency:"USD":"symbol" }}</span>
+              </p>
+            </mat-card-content>
+            <mat-card-actions fxLayout="row"  fxLayoutAlign="center">
+              <button mat-button fxFlex="100%" (click) = "AddToCart()"><mat-icon fxFlex="20%" color="accent">shopping_cart</mat-icon>Add to cart</button>
+            </mat-card-actions>
+          </mat-card>
+
+
+    </mat-grid-tile>
+  </mat-grid-list>
+

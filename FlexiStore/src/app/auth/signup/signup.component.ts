@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-signup',
@@ -15,7 +16,7 @@ export class SignupComponent implements OnInit {
   pwd   = new FormControl('', [Validators.required, Validators.pattern(this.pwdRegex)]);
 
 
-  constructor() { }
+  constructor(private authService: AuthService) { }
 
   getUserNameErrorMessage() {
     return (this.userName.hasError('required') ||
@@ -42,6 +43,10 @@ export class SignupComponent implements OnInit {
   }
 
   onSubmit() {
+    this.authService.registerUser({
+      email: this.email.value,
+      password: this.pwd.value
+    });
     console.log(this.userName.value);
     console.log(this.email.value);
     console.log(this.pwd.value);

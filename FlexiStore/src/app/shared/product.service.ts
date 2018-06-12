@@ -4,6 +4,7 @@ import { IProduct, MainCategory } from './product';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import * as _ from "lodash";
+import { OrderItem, Order } from './order';
 
 
 @Injectable()
@@ -12,6 +13,7 @@ export class ProductService {
 
     public products: IProduct[] =[];
     public categories: MainCategory[] =[];
+    public order: Order =new Order();
 
     public loadProducts(): Observable<IProduct[]>{
         return this.httpClient.get<IProduct[]>("/api/products")
@@ -25,7 +27,28 @@ export class ProductService {
 
     public getProduct(id: number): Observable<IProduct> {
       return  this.httpClient.get<IProduct>("/api/products/" + id);
-}
+  }
+
+  public AddToOrder(product: IProduct) {
+
+    let item: OrderItem = this.order.items.find(i => i.productId == product.id);
+
+    if (item) {
+
+      item.quantity++;
+
+    } else {
+
+      item = new OrderItem();
+      item.productId = product.id;
+      item.productTitle = product.title;
+      item.productSize = product.size;
+      item.unitPrice = product.price;
+      item.quantity = 1;
+
+      this.order.items.push(item);
+    }
+  }
 
 private handleError(err: HttpErrorResponse) {
     // in a real world app, we may send the server to some remote logging infrastructure

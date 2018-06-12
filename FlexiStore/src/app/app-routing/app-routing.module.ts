@@ -4,9 +4,11 @@ import { ProductsComponent } from '../products/products.component';
 import { SignupComponent } from '../auth/signup/signup.component';
 import { LoginComponent } from '../auth/login/login.component';
 import { ProductDetailComponent } from '../products/product-detail/product-detail.component';
+import { CartComponent } from '../cart/cart/cart.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'cart', component: CartComponent},
   { path: 'products/:id',component: ProductDetailComponent},
   { path: 'products', component: ProductsComponent },
   { path: 'signup', component: SignupComponent},

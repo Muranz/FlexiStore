@@ -36,6 +36,11 @@ namespace FlexiStore
       services.AddIdentity<StoreUser, IdentityRole>(cfg =>
       {
         cfg.User.RequireUniqueEmail = true;
+        cfg.Password.RequiredLength = 6;
+        cfg.Password.RequireLowercase = false;
+        cfg.Password.RequireUppercase = false;
+        cfg.Password.RequireNonAlphanumeric = false;
+        cfg.Password.RequireDigit = false;
       })
               .AddEntityFrameworkStores<StoreContext>();
 

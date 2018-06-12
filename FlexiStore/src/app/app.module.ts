@@ -20,6 +20,10 @@ import { HeaderComponent } from './navigation/header/header.component';
 import { SideNavComponent } from './navigation/side-nav/side-nav.component';
 import { ProductSnackComponent } from './products/product-snack/product-snack.component';
 import { ProductDetailComponent } from './products/product-detail/product-detail.component';
+import { ProductService } from './shared/product.service';
+import { AuthService } from './auth/auth.service';
+import { CheckoutComponent } from './cart/checkout/checkout.component';
+import { CartComponent } from './cart/cart/cart.component';
 
 
 
@@ -33,7 +37,9 @@ import { ProductDetailComponent } from './products/product-detail/product-detail
     HeaderComponent,
     SideNavComponent,
     ProductSnackComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    CheckoutComponent,
+    CartComponent
   ],
   imports: [
     CommonModule,
@@ -45,7 +51,9 @@ import { ProductDetailComponent } from './products/product-detail/product-detail
     CustomMaterialModule,
     AppRoutingModule
   ],
-  providers: [{ provide: 'BASE_URL', useFactory: getBaseUrl }],
+  providers: [{ provide: 'BASE_URL', useFactory: getBaseUrl },
+                ProductService,
+                AuthService],
   bootstrap: [AppComponent],
   entryComponents : [ProductSnackComponent]
 })

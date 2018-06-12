@@ -10,9 +10,9 @@ export interface Brand {
 }
 
 export interface IProduct {
-	id: string;
+	id: number;
 	mainCategory: MainCategory;
-	size: number;
+	size: string;
 	price: number;
 	title: string;
 	description: string;

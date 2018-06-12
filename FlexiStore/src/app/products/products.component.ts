@@ -6,7 +6,6 @@ import { ProductSnackComponent } from './product-snack/product-snack.component';
 import * as _ from "lodash";
 
 @Component({
-    providers: [ProductService],
     selector: 'store-products',
     templateUrl: './products.component.html',
     styleUrls: ['./products.component.css']
@@ -63,7 +62,8 @@ export class ProductsComponent implements OnInit {
             error => this.errorMessage = <any>error);
      }
 
-     AddToCart(){
+     AddToCart(product:IProduct){
+       this._productService.AddToOrder(product);
        this.openSnackBar();
      }
 

@@ -6,7 +6,6 @@ import { ProductSnackComponent } from '../product-snack/product-snack.component'
 import { MatSnackBar } from '@angular/material';
 
 @Component({
-  providers: [ProductService],
   selector: 'app-product-detail',
   templateUrl: './product-detail.component.html',
   styleUrls: ['./product-detail.component.css']

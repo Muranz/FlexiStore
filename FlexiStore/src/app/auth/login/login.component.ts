@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,7 @@ export class LoginComponent  {
   pwd   = new FormControl('', [Validators.required, Validators.pattern(this.pwdRegex)]);
 
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder,private authService: AuthService) { }
 
 
 
@@ -33,6 +34,10 @@ export class LoginComponent  {
   }
 
   onSubmit() {
+    this.authService.login({
+      email: this.email.value,
+      password: this.pwd.value
+    });
     console.log(this.email.value);
     console.log(this.pwd.value);
   }

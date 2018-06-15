@@ -23,7 +23,7 @@
           <a routerLink="/products">Shop</a>
         </li>
         <li>
-          <a routerLink="/cart">Cart</a>
+          <mat-icon style="cursor: pointer" color="primary" matBadge="{{ data.order.items.length }}" matBadgeColor="primary" (click)="openDialog()">shopping_cart</mat-icon>
         </li>
         <li *ngIf="isAuth">
           <a style="cursor: pointer" (click)="onLogout()">Logout</a>

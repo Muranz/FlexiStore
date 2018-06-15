@@ -1,22 +1,25 @@
-<h3>Shopping Cart</h3>
-<div>#/Items: {{ data.order.items.length }}</div>
-<div>Subtotal: {{ data.order.subtotal | currency:"USD":true  }}</div>
-<table class="table table-condensed table-hover">
-  <thead>
-    <tr>
-      <td>Product</td>
-      <td>#</td>
-      <td>$</td>
-      <td>Total</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let o of data.order.items">
-      <td>{{ o.productCategory }} - {{ o.productTitle }}</td>
-      <td>{{ o.quantity }}</td>
-      <td>{{ o.unitPrice | currency:"USD":true }}</td>
-      <td>{{ (o.unitPrice * o.quantity) | currency:"USD":true }}</td>
-    </tr>
-  </tbody>
-</table>
-<button class="btn btn-success" *ngIf="data.order.items.length > 0" (click)="onCheckout()">Checkout</button>
+
+<h1 mat-dialog-title>Your cart items:</h1>
+<div mat-dialog-content>
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="productTitle">
+      <th mat-header-cell *matHeaderCellDef> Product </th>
+      <td mat-cell *matCellDef="let element"> {{element.productTitle}} </td>
+      <td mat-footer-cell *matFooterCellDef> Total </td>
+    </ng-container>
+
+    <ng-container matColumnDef="amount">
+      <th mat-header-cell *matHeaderCellDef> Amount </th>
+      <td mat-cell *matCellDef="let element"> {{element.quantity}} x {{element.unitPrice| currency:"USD":"symbol"}} = {{(element.quantity * element.unitPrice)|currency:"USD":"symbol"}} </td>
+      <td mat-footer-cell *matFooterCellDef> {{ data.order.subtotal | currency:"USD":"symbol"}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
+  </table>
+</div>
+<div mat-dialog-actions>
+  <button mat-button color="primary" *ngIf="data.order.items.length > 0" (click)="onCheckout()" [mat-dialog-close]>Checkout</button>
+  <button mat-button color="accent"  [mat-dialog-close]>Continue Shopping</button>
+</div>
+

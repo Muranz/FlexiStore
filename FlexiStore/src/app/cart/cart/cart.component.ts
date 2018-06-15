@@ -9,8 +9,12 @@ import { AuthService } from '../../auth/auth.service';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
+  displayedColumns = ['productTitle', 'amount'];
+  dataSource:any;
 
-  constructor(public data:ProductService, private router:Router, private auth:AuthService) { }
+  constructor(public data:ProductService, private router:Router, private auth:AuthService) {
+    this.dataSource = data.order.items;
+  }
 
   ngOnInit() {
   }

@@ -24,6 +24,7 @@ import { ProductService } from './shared/product.service';
 import { AuthService } from './auth/auth.service';
 import { CheckoutComponent } from './cart/checkout/checkout.component';
 import { CartComponent } from './cart/cart/cart.component';
+import { FooterComponent } from './navigation/footer/footer.component';
 
 
 
@@ -39,7 +40,8 @@ import { CartComponent } from './cart/cart/cart.component';
     ProductSnackComponent,
     ProductDetailComponent,
     CheckoutComponent,
-    CartComponent
+    CartComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -55,7 +57,7 @@ import { CartComponent } from './cart/cart/cart.component';
                 ProductService,
                 AuthService],
   bootstrap: [AppComponent],
-  entryComponents : [ProductSnackComponent]
+  entryComponents : [ProductSnackComponent,CartComponent]
 })
 export class AppModule {
 }
